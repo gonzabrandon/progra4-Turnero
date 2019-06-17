@@ -5,7 +5,9 @@
  */
 package com.mycompany.turnero.clases.modelo;
 import javax.persistence.Id;
-import javax.persistence.column;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+
 
 
 /**
@@ -16,7 +18,7 @@ public class Servicio {
     
     @Id
     private String sigla;
-    @column
+    @Column
     private String nombre;
 
     public String getSigla() {

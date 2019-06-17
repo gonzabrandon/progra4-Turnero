@@ -5,6 +5,12 @@
  */
 package com.mycompany.turnero.clases.modelo;
 import java.io.Serializable;
+import javax.persistence.GenerationType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 
 
 /**
@@ -12,10 +18,10 @@ import java.io.Serializable;
  * @author Brandon Carvajal
  */
 @Entity
-public class Turno implements Sereializable { //POJO - Plain Ild Java Object
+public class Turno implements Serializable { //POJO - Plain Ild Java Object
     
     @Id
-    @GeneratedValue(strategy = GeneratedType.IDENTITY)
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Long id;
     
     @ManyToOne

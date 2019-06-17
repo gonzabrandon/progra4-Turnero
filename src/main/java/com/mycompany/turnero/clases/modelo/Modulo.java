@@ -1,15 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.mycompany.turnero.clases.modelo;
 import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.GenerationType;
 import javax.persistence.GeneratedValue;
-import javax.persistence.column;
+import javax.persistence.Column;
 
 
 
@@ -23,7 +18,7 @@ public class Modulo implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
     
-    @column
+    @Column
     private String nombre;
 
     public String getNombre() {
